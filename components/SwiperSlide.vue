@@ -10,7 +10,7 @@
           <button class="mb-4.5 placeholder">
             <img src="@/assets/images/violet-button.svg" alt="전체보기 버튼" />
           </button>
-          <span>전체보기</span>
+          <a href="http://itempang.com">전체보기</a>
         </div>
       </div>
       <button class="absolute top-40 left-0 z-50 -translate-x-1/2 -translate-y-1/2" v-if="currentSlide !== 0"
@@ -27,7 +27,6 @@
 
 <script>
 import { ref, computed } from "vue"
-import ProductCard from "./ProductCard.vue"
 
 export default {
   props: {
@@ -35,9 +34,6 @@ export default {
       type: Array,
       required: true
     }
-  },
-  components: {
-    ProductCard
   },
   setup(props) {
     const currentSlide = ref(0)
