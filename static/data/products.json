@@ -1,0 +1,70 @@
+{
+  "product_title": "🏆뷰티컬리 어워즈 특가🏆",
+  "product_subtitle": "최대 82%! 다신 없을 최대 혜택",
+  "products": [
+    {
+      "id": 1,
+      "product_name": "[에스티 로더] 갈색병 50ML 스페셜 기획세트 (클렌저 15ml+단단크림 15ml+아이젤크림 5ml 증정)",
+      "url": "https://product-image.kurly.com/cdn-cgi/image/fit=crop,width=360,height=468,quality=85/product/image/acf26ab8-864e-47d7-93bc-7fd9ce85c631.jpg",
+      "product_price": 182000,
+      "product_discount": 15,
+      "comments": 684
+    },
+    {
+      "id": 2,
+      "product_name": "[피지오겔][1주년단독기획] DMT 페이셜 크림 기획세트 75mlx3 (총 225ml , 쿠폰적용시 32,310원)",
+      "url": "https://product-image.kurly.com/cdn-cgi/image/fit=crop,width=360,height=468,quality=85/product/image/b080af71-2405-4d21-8cc9-26bfe4cf3b0e.jpg",
+      "product_price": 55000,
+      "product_discount": 34,
+      "comments": 1200
+    },
+    {
+      "id": 3,
+      "product_name": "[동국제약] 센텔리안24 마데카 마이크로 스타톡 세럼 50ml",
+      "url": "https://product-image.kurly.com/cdn-cgi/image/fit=crop,width=360,height=468,quality=85/product/image/e8b8cfa3-cdd7-4835-a473-1510140d3cbd.jpg",
+      "product_price": 32000,
+      "product_discount": 44,
+      "comments": 2000
+    },
+    {
+      "id": 4,
+      "product_name": "[헤라] 블랙 쿠션 (리필포함) 6종 (택1)",
+      "url": "https://product-image.kurly.com/cdn-cgi/image/fit=crop,width=360,height=468,quality=85/product/image/bdb8144f-94fe-443e-b025-a5033b792c45.jpg",
+      "product_price": 66000,
+      "product_discount": 10,
+      "comments": 3000
+    },
+    {
+      "id": 5,
+      "product_name": "[스킨푸드] 캐롯 카로틴 카밍 워터 패드 60매 (최대혜택가 16,000원)",
+      "url": "https://product-image.kurly.com/cdn-cgi/image/fit=crop,width=360,height=468,quality=85/product/image/1367908c-e265-4df6-8747-153734b20c4c.jpg",
+      "product_price": 26000,
+      "product_discount": 33,
+      "comments": 1400
+    },
+    {
+      "id": 6,
+      "product_name": "[클리오] 샤프 쏘 심플 워터프루프 펜슬라이너 4종 (택1) 단,하루! 15% 쿠폰적용가 5,950원",
+      "url": "https://product-image.kurly.com/cdn-cgi/image/fit=crop,width=360,height=468,quality=85/product/image/12b6e5b4-e38b-4afe-9161-4e8bb9c6ef4b.jpg",
+      "product_price": 10000,
+      "product_discount": 30,
+      "comments": 2500
+    },
+    {
+      "id": 7,
+      "product_name": "[에끌라두] 골든 샌달 우드 괄사 (페이스&amp;두피 마시지 툴)",
+      "url": "https://product-image.kurly.com/cdn-cgi/image/fit=crop,width=360,height=468,quality=85/product/image/43716e76-82c4-4da3-bf72-6d5162a8a422.jpg",
+      "product_price": 29000,
+      "product_discount": 72,
+      "comments": 3000
+    },
+    {
+      "id": 8,
+      "product_name": "[산타마리아노벨라] 왁스 타블렛 9종 (택1)",
+      "url": "https://product-image.kurly.com/cdn-cgi/image/fit=crop,width=360,height=468,quality=85/product/image/87e4c247-e0c2-413e-8b06-b091c3609e3f.jpg",
+      "product_price": 45000,
+      "product_discount": 10,
+      "comments": 685
+    }
+  ]
+}
