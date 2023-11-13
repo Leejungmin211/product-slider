@@ -1,50 +1,17 @@
-module.exports = {
-  /*
-  ** Headers of the page
-  */
-  head: {
-    title: 'nuxt-project',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt project' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig({
+  devtools: { enabled: true },
+  modules: ["@nuxtjs/tailwindcss"],
+  css: ["~/assets/css/tailwind.css", "~/assets/css/logo-fonts.css"],
+  components: [{ path: "~/components", pathPrefix: false }],
+  devServer: {
+    port: 8888,
   },
-  css: ['~/assets/css/tailwind.css'],
-  /*
-  ** Customize the progress bar color
-  */
-  loading: { color: '#3B8070' },
-  components: [{ path: '~/components', pathPrefix: false }],
-  /*
-  ** Build configuration
-  */
-  build: {
-    /*
-    ** Run ESLint on save
-    */
-    extend(config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
+  runtimeConfig: {
+    public: {
+      NHN_VERSION: process.env.NHN_VERSION,
+      NHN_CLIENT_ID: process.env.NHN_CLIENT_ID,
+      NHN_PLATFORM: process.env.NHN_PLATFORM,
     },
-    transpile: [({ isLegacy }) => isLegacy && 'axios'],
-    postcss: {
-      postcssOptions: {
-        plugins: {
-          tailwindcss: {},
-          autoprefixer: {},
-        },
-      },
-    },
-  }
-}
-
+  },
+});

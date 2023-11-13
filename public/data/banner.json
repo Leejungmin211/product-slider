@@ -1,0 +1,28 @@
+{
+  "banner": [
+    {
+      "id": 1,
+      "imageUrl": "https://product-image.kurly.com/cdn-cgi/image/width=1900,height=370,quality=85/banner/main/pc/img/29aac9ab-3624-44a3-8d27-9d40f20959bc.png",
+      "bannerTitle": "마켓컬리 이미지",
+      "bannerUrl": ""
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://product-image.kurly.com/cdn-cgi/image/width=1900,height=370,quality=85/banner/main/pc/img/5c0ecca0-dd58-41eb-bd60-e5597cedc167.jpg",
+      "bannerTitle": "마켓컬리 이미지",
+      "bannerUrl": ""
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://product-image.kurly.com/cdn-cgi/image/width=1900,height=370,quality=85/banner/main/pc/img/23c8c754-019b-455a-8b16-e2f2e34c4fd6.jpg",
+      "bannerTitle": "마켓컬리 이미지",
+      "bannerUrl": ""
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://product-image.kurly.com/cdn-cgi/image/width=1900,height=370,quality=85/banner/main/pc/img/71c34451-6059-44aa-8731-cca7c88f309e.png",
+      "bannerTitle": "마켓컬리 이미지",
+      "bannerUrl": ""
+    }
+  ]
+}

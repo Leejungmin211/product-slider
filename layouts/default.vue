@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <nuxt/>
+  <div class="w-screen h-screen mt-40">
+    <MainBanner />
+    <slot />
   </div>
 </template>
 
@@ -14,4 +15,3 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 </style>
-

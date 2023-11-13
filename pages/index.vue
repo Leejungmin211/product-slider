@@ -1,6 +1,5 @@
 <template>
-  <main class="w-full h-full">
+  <main class="w-full py-10">
     <ProductsList />
   </main>
 </template>
-
