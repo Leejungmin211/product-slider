@@ -8,7 +8,7 @@ const subtitle = ref("");
 
 const getProducts = async () => {
   try {
-    const res = await axios.get("/data/products.json");
+    const res = await axios.get("http://localhost:8888/data/products.json");
     products.value = res.data.products;
     titleUrl.value = "";
     title.value = res.data.product_title;
