@@ -7,6 +7,7 @@ const props = defineProps({
 });
 const currentSlide = ref(0);
 const slideWidth = ref(0);
+const autoPlayInterval = ref(null);
 
 const resizeHandler = () => {
   slideWidth.value = document.documentElement.clientWidth;
@@ -15,7 +16,7 @@ const resizeHandler = () => {
 const slideStyle = computed(() => {
   return {
     transform: `translateX(-${currentSlide.value * slideWidth.value}px)`,
-    transition: "transform 0.2s ease-in",
+    transition: "transform 0.5s ease-in",
   };
 });
 
@@ -42,14 +43,22 @@ const preButton = () => {
 const nextButton = () => {
   if (currentSlide.value < lastSlide.value) {
     currentSlide.value = currentSlide.value + 1;
-  } else {
-    currentSlide.value = 0;
+  } else if (lastSlide.value) {
   }
+};
+
+const startAutoPlay = () => {
+  autoPlayInterval.value = setInterval(nextButton, 3000);
+};
+
+const stopAutoPlay = () => {
+  clearInterval(autoPlayInterval.value);
 };
 
 onMounted(() => {
   slideWidth.value = document.documentElement.clientWidth;
   window.addEventListener("resize", resizeHandler);
+  startAutoPlay();
 });
 </script>
 
@@ -61,6 +70,8 @@ onMounted(() => {
         v-for="banner in bannerData"
         :key="banner.bannerNo"
         :style="slideStyle"
+        @mouseover="stopAutoPlay"
+        @mouseleave="startAutoPlay"
       >
         <div class="flex justify-center" :style="widthResizeStyle">
           <img
@@ -69,6 +80,9 @@ onMounted(() => {
           />
         </div>
       </div>
+      <p class="absolute z-10 top-0 left-0">{{ currentSlide + 1 }}</p>
+      /
+      <p class="absolute z-10 top-10 left-0">{{ bannerData.length }}</p>
       <button
         class="absolute z-10 top-0 left-0 right-1/2 bottom-0 my-auto mr-590 ml-o rotate-180"
         @click="preButton"
